@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class="image_wrap">
+            <img src="image/shoe.jpeg" alt="Nike shoe">
+        </div>
+        <div class="content_wrap">
+            <div class="item_name">
+                <p>Nike shoe</p>
+            </div>
+            <div class="item_price">
+                <button class="item_price_btn" onclick="purchase()">Purchase - $149</button>
+            </div>
+        </div>
+        <div class="error_wrap">
+            <p id="error" class="error_txt"></p>
+        </div>
+    </div>
+    <div>
+        <div class="input_wrap">
+            <input id="input-1" class="input_field" type="number">
+            <p id="dynamic-op" class="dynamic_op"></p>
+            <input id="input-2" class="input_field" type="number">
+        </div>
+        <div class="operators_wrap">
+            <button class="op_btn" onclick="add()">+</button>
+            <button class="op_btn" onclick="subtract()">-</button>
+            <button class="op_btn" onclick="devide()">/</button>
+            <button class="op_btn" onclick="multiply()">*</button>
+        </div>
+        <div class="display_wrap">
+            <p id="display-el" class="display" >Result: </p>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
