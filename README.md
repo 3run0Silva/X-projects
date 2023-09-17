@@ -1,4 +1,4 @@
-# x projects
+# X PROJECTS
 
 This is basically a collection of projects/challenges from scrimba.
 Folder "Projects" has the 2 projects done during the online course.
