@@ -1,0 +1,15 @@
+.banana_shelf {
+    background-color: rgb(214, 214, 76);
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 30px;
+    width: 50%;
+}
+
+.orange_shelf {
+    background-color: rgb(248, 175, 38);
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 30px;
+    width: 50%;
+}

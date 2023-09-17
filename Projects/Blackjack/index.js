@@ -1,13 +1,23 @@
 "use strict";
 
-let cards = [];
+let player = {
+    name: "User3ds",
+    chips: 20
+}
+
 let sum = 0;
-let hasBlackjack = false;
-let isAlive = false;
 let message;
-let messageEl = document.getElementById("message-el");
+let cards = [];
+let isAlive = false;
+let hasBlackjack = false;
+
 let sumEl = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el");
+let playerEl = document.getElementById("player-el");
+let messageEl = document.getElementById("message-el");
+
+playerEl.textContent = player.name + " : $" + player.chips
+
 
 console.log(cards)
 
@@ -59,8 +69,11 @@ function renderGame() {
 
 // Function to draw a new card
 function getNewCard() {
-    let newCard = getRandomCard();
-    sum += newCard;
-    cards.push(newCard);
-    renderGame();
+    if (isAlive === true && hasBlackjack === false) {
+        let newCard = getRandomCard();
+        sum += newCard;
+        cards.push(newCard);
+        renderGame();
+    }
+    
 }
